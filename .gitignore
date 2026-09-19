@@ -1,0 +1,17 @@
+node_modules/
+dist/
+coverage/
+.DS_Store
+.env
+.env.*
+!.env.example
+
+# Personal corpora and generated indexes must remain local.
+data/
+*.sqlite
+*.sqlite-shm
+*.sqlite-wal
+*.db
+*.pdf
+*.jsonl
+*.tgz

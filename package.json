@@ -1,0 +1,35 @@
+{
+  "name": "corpuscribe",
+  "version": "0.1.0",
+  "description": "Corpus-grounded scientific writing tools over MCP",
+  "type": "module",
+  "bin": {
+    "corpuscribe-mcp": "dist/server.js"
+  },
+  "files": ["dist", "README.md", "LICENSE"],
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "check": "tsc -p tsconfig.json --noEmit",
+    "dev": "tsx src/server.ts",
+    "start": "node dist/server.js",
+    "test": "vitest run"
+  },
+  "keywords": ["mcp", "scientific-writing", "corpus-linguistics", "sqlite"],
+  "author": "Thierry",
+  "license": "MIT",
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.30.0",
+    "better-sqlite3": "^13.0.3",
+    "zod": "^4.6.5"
+  },
+  "devDependencies": {
+    "@types/better-sqlite3": "^9.6.0",
+    "@types/node": "^26.6.2",
+    "tsx": "^4.23.13",
+    "typescript": "^7.0.2",
+    "vitest": "^5.0.1"
+  }
+}
